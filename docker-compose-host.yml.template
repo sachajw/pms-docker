@@ -5,7 +5,7 @@ services:
     image: plexinc/pms-docker
     restart: unless-stopped
     environment:
-      - TZ=<timezone>
+      - TZ=Africa\Johannesburg
       - PLEX_CLAIM=<claimToken>
     network_mode: host
     volumes:
