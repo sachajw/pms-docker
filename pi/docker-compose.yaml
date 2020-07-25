@@ -2,13 +2,13 @@ version: '2'
 services:
   plex:
     container_name: plex
-    image: plexinc/pms-docker
+    image: plexinc/pms-docker:arm64v8-latest
     network_mode: host
     restart: always
     environment:
       - TZ=Africa\Johannesburg
       - PLEX_CLAIM=7i81Cm-TzyoSPF9rrtcg
     volumes:
-      - /config:/plex/config
-      - /transcode:/media/store-e-500/plex/temp
-      - /media:/media/store-e-500/plex/media
+      - /plex/config:config
+      - /plex/transcode:transcode
+      - /plex/media:media
