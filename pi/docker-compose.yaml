@@ -2,7 +2,7 @@ version: '2'
 services:
   plex:
     container_name: plex
-    image: plexinc/pms-docker:arm64v8-latest
+    image: plexinc/pms-docker
     network_mode: host
     restart: always
     environment:
