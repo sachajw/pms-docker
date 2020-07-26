@@ -9,6 +9,6 @@ services:
       - TZ=Africa\Johannesburg
       - PLEX_CLAIM=7i81Cm-TzyoSPF9rrtcg
     volumes:
-      - /mnt/120GB:/plex/config
-      - /mnt/120GB:/plex/transcode
-      - /mnt/120GB:/plex/media
+      - /plex:/config
+      - /plex:/transcode
+      - /plex:/media
